@@ -1,0 +1,5 @@
+<h2>Group overview</h2>
+<a routerLink="/groups/0">new group</a>
+<ul>
+  <li *ngFor="let group of groups" routerLink="/groups/{{group.id}}">{{group.name}}</li>
+</ul>

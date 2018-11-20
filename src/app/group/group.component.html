@@ -1,0 +1,14 @@
+<h2>Group details</h2>
+<a routerLink="/groups">Back to the overview</a>
+
+<form [formGroup]="editForm" *ngIf="editForm">
+  <label>
+    id:
+    <input type="number" formControlName="id" readonly>
+  </label>
+  <label>
+    Name:
+    <input type="text" formControlName="name">
+  </label>
+  <button (click)="save()">save</button>
+</form>
